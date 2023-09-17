@@ -1,16 +1,21 @@
+<!-- load function page and config page  -->
 <?php
-    
-    require_once('includes/header.blade.php');
+    require_once('../functions/admin/adminFunction.php');
 ?>
-         
-            
+
+<!-- header area start-->
+<?php
+    get_admin_header();
+
+?>  
+<!-- header area end-->
+
+
         <!-- MENU SIDEBAR-->
-        <?php
-            
-            require_once('includes/sidebar.php');
+        <?php    
+            get_admin_sidebar()
         ?>
         <!-- END MENU SIDEBAR-->
-        
 
             <!-- MAIN CONTENT-->
 
@@ -209,7 +214,10 @@
             </div>
 
             <!-- END MAIN CONTENT-->
+
+            
+<!-- footer area star  -->
 <?php
 
-    require_once('includes/footer.php');
+   get_admin_footer();
 ?>
