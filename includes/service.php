@@ -10,9 +10,8 @@
                             <img src="assets/imgs/pencil-case.svg"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
-                            <h6 class="title">Adipisicing</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
+                            <h6 class="title">HTML</h6>
+                            <p class="subtitle">****</p>
                         </div>
                     </div>
                 </div>

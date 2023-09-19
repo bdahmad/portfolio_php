@@ -24,7 +24,7 @@
                         <span>$</span>
                         <span>0.00/Month</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
+                    <a href="#contact" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
@@ -46,7 +46,7 @@
                         <span>$</span>
                         <span>9.99/Month</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
+                    <a href="#contact" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
@@ -68,7 +68,7 @@
                         <span>$</span>
                         <span>99.9/Month</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
+                    <a href="#contact" class="btn btn-primary mt-3 pricing-card-btn">Contact</a>
                 </div>
 
             </div><!-- end of pricing wrapper -->

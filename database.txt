@@ -1,6 +1,6 @@
 project portfolio ->>>>>>>>>>>>> DB
 
-tbl_nav(id, logo, name, designation)
+tbl_hero(hero_id, main_logo, user_name, user_designation)
 tbl_about(id, description, cv)
 tbl_portfolio(id, name, live-review,git-link,work-description,)
 tbl_contact(id, name, email, message)
