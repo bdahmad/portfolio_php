@@ -8,6 +8,6 @@
             </h1>
             <p class="header-subtitle">FRONTEND WEB DESIGNER</p>
 
-            <button class="btn btn-primary">Visit My Works</button>
+            <a href="#portfolio" class="btn btn-primary">Visit My Works</a>
         </div>
     </header><!-- end of page header -->
