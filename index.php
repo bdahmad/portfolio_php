@@ -2,6 +2,7 @@
 
     // all function and config file load here 
     require_once('functions/function.php');
+    require_once('database/config.php');
 ?>
 
 <!-- navigation section start here  -->
