@@ -1,7 +1,22 @@
 project portfolio ->>>>>>>>>>>>> DB
 
-tbl_hero(hero_id, main_logo, user_name, user_designation)
-tbl_about(id, description, cv)
+
+ahmad ali{
+   tbl_hero(hero_id, main_logo, user_name, user_designation)
+   tbl_about(id, description, cv,user_image)
+}
+sabbir{
+
+}
+nurtaj{
+
+}
+mim{
+   
+}
+
+
+
 tbl_portfolio(id, name, live-review,git-link,work-description,)
 tbl_contact(id, name, email, message)
 tbl_footer(id, copyright,)

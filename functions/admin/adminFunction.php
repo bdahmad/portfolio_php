@@ -1,7 +1,7 @@
 <?php
 
     function get_admin_header(){
-        require_once('includes/header.blade.php');
+        require_once('includes/header.php');
     }
     
     function get_admin_sidebar(){
