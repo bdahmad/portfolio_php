@@ -12,9 +12,9 @@ nurtaj{
 
 }
 mim{
-   
-}
 
+}
+** nijer moto table nia kaj koren jar jeta valo lage
 
 
 tbl_portfolio(id, name, live-review,git-link,work-description,)

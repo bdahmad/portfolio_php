@@ -1,5 +1,5 @@
 <?php
-
+    require_once('../database/config.php');
     function get_admin_header(){
         require_once('includes/header.php');
     }

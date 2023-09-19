@@ -13,13 +13,25 @@
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-cog"></i>Manage </a>
+                                <i class="fas fa-cog"></i>Header <i class="fas fa-angle-down"></i></a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="manage_header.php">Header</a>
+                                    <a href="add_header.php">Add</a>
                                 </li>
                                 <li>
-                                    <a href="manage_about.php">About</a>
+                                    <a href="#">View</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>About <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">Add</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
                                 </li>
                             </ul>
                         </li>

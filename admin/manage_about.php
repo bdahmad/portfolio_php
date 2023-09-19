@@ -26,7 +26,7 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        Edit Header Info
+                                        Edit About Information
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">This Header Info Will Use In Frontend Header Section</h5>
