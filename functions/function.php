@@ -17,7 +17,7 @@
 
     // service section included 
     function get_service(){
-        require_once('includes/service.php');
+        require_once('includes/skills.php');
     };
 
     // portfolio section included 
