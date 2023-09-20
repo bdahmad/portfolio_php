@@ -29,6 +29,21 @@
     <!-- Main JS-->
     <script src="../assets/admin/js/main.js"></script>
 
+
+    <!-- rang input from manage skills  -->
+    <script>
+        $(document).ready(function () {
+        
+            $(".skill_parcentage").change(function (e) { 
+                e.preventDefault();
+                $value = $('.skill_parcentage').val();
+                $('.skill_parcentage_view').val($value);
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>
