@@ -2,8 +2,8 @@ project portfolio ->>>>>>>>>>>>> DB
 
 
 ahmad ali{
-   tbl_hero(hero_id, main_logo, user_name, user_designation)
-   tbl_about(id, description, cv,user_image)
+   
+   tbl_user(user_id, user_name, user_email, password, logo_name, user_designation,user_cv, user_image, user_description)
 }
 sabbir{
 
