@@ -36,6 +36,11 @@
     {{-- font awosam icon cdn  --}}
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <!-- sweet alert cdn  -->
+    <!-- <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
+
+
 </head>
 
 <body class="animsition">
