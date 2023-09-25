@@ -1,3 +1,4 @@
+
 <?php
 require_once('database/config.php');
     // head section included 
