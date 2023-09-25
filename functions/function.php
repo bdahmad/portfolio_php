@@ -1,5 +1,5 @@
 <?php
-
+require_once('database/config.php');
     // head section included 
     function get_head(){
         require_once('includes/head.php');
