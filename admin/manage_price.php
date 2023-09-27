@@ -17,6 +17,14 @@ get_admin_sidebar()
 ?>
 <!-- END MENU SIDEBAR-->
 
+<?php
+
+$select_query =  "SELECT * FROM Pricing";
+
+$all_data = mysqli_query($con, $select_query);
+$number_of_package = $all_data->num_rows;
+
+?>
 
 <!-- skills insert operation here  -->
 
@@ -93,6 +101,9 @@ if (!empty($_POST)) {
                 <div class="col-md-10 ">
                     <div class="card">
                         <div class="card-header">
+
+                            <input type="hidden" name="number_of_package" id="number_of_package" value="<?= $number_of_package?>">
+                           
                             Add Packeg
                         </div>
                         <div class="card-body">
@@ -152,10 +163,10 @@ if (!empty($_POST)) {
 
 
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm submit-packeg" id="submit-packeg">
+                                    <button type="submit" class="btn btn-primary btn-sm submit-packeg" id="submit-packeg" >
                                         <i class="fa fa-dot-circle-o"></i> Submit
                                     </button>
-                                    <button type="reset reset-packeg" class="btn btn-danger btn-sm" id="reset-packeg">
+                                    <button type="reset reset-packeg" class="btn btn-danger btn-sm" id="reset-packeg" >
                                         <i class="fa fa-ban"></i> Reset
                                     </button>
                                 </div>
@@ -194,13 +205,7 @@ if (!empty($_POST)) {
 
                                 <tbody>
 
-                                    <?php
-
-                                    $select_query =  "SELECT * FROM Pricing";
-                                    $all_data = mysqli_query($con, $select_query);
-
-                                    ?>
-
+                                   
                                     <?php
 
                                     foreach ($all_data as $key => $data) {
@@ -217,7 +222,7 @@ if (!empty($_POST)) {
                                             <td>
                                                 <a href="edit_packeg.php?q=<?= $data['id'] ?>" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
                                                 <a href="edit_packeg.php?q=<?= $data['id'] ?>" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
-                                                <!-- <a href="delete_packeg.php?q=<?= $data['id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a> -->
+                                                <a href="delete_packeg.php?q=<?= $data['id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                                             </td>
                                         </tr>
 
