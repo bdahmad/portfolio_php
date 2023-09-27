@@ -43,6 +43,19 @@
                                
                             </ul>
                         </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Portfolio <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="manage_all_portfolio.php">Manage All Portfolio</a>
+                                    <a href="manage_add_portfolio.php">Manage Add Portfolio</a>
+                                    <a href="manage_view_portfolio.php">Manage View Portfolio</a>
+                                    <a href="manage_edit_portfolio.php">Manage Edit Portfolio</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
