@@ -278,7 +278,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-
+.p-btn:hover{
+  color: white !important;
+}
 button,
 input {
   overflow: visible;
@@ -11173,6 +11175,10 @@ p {
   margin-bottom: 25px;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
+}
+
+.hvr:hover{
+  color: white;
 }
 
 @media (prefers-reduced-motion: reduce) {
