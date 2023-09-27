@@ -19,19 +19,7 @@
                                     <a href="add_header.php">Add</a>
                                 </li>
                                 <li>
-                                    <a href="#">View</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-cog"></i>About <i class="fas fa-angle-down"></i></a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="#">Add</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
+                                    <a href="view_header.php">View</a>
                                 </li>
                             </ul>
                         </li>
@@ -41,6 +29,16 @@
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="manage_skills.php">Manage Skills</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Pricing<i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="manage_price.php">Manage Packeg</a>
                                 </li>
                                
                             </ul>

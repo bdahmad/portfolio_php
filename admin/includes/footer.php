@@ -43,6 +43,31 @@
         });
     </script>
 
+    <!-- tinymce code here  -->
+    <script>
+        tinymce.init({
+        selector: 'textarea',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
+
+    <!-- package submit limitaion here  -->
+    <script>
+
+        $(document).ready(function () {
+            $number_of_package = $('#number_of_package').val();
+
+            if($number_of_package == 3){
+                $('#submit-packeg').prop( "disabled", true );
+
+            }else{
+                $('#submit-packeg').prop( "disabled", false );
+
+            }
+            
+        });
+    </script>
 
 </body>
 
