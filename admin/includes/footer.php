@@ -52,6 +52,23 @@
         });
     </script>
 
+    <!-- package submit limitaion here  -->
+    <script>
+
+        $(document).ready(function () {
+            $number_of_package = $('#number_of_package').val();
+
+            if($number_of_package == 3){
+                $('#submit-packeg').prop( "disabled", true );
+
+            }else{
+                $('#submit-packeg').prop( "disabled", false );
+
+            }
+            
+        });
+    </script>
+
 </body>
 
 </html>
