@@ -3,11 +3,6 @@
 require_once('../functions/admin/adminFunction.php');
 
 
-
-
-
-
-
 ?>
 
 <!-- header area start-->

@@ -56,6 +56,16 @@
                                
                             </ul>
                         </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Messages <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="all_messages.php">All Messages</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
