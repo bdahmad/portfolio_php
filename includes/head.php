@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+
+    <!-- slick slider cdn  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
