@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2023 at 10:11 AM
+-- Generation Time: Oct 02, 2023 at 06:08 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,42 +24,36 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_about`
+-- Table structure for table `tbl_user`
 --
 
-CREATE TABLE `tbl_about` (
-  `about_id` int(11) NOT NULL,
-  `about_description` varchar(200) NOT NULL,
-  `user_cv` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_hero`
---
-
-CREATE TABLE `tbl_hero` (
+CREATE TABLE `tbl_user` (
   `user_id` int(11) NOT NULL,
-  `user_name` varchar(20) NOT NULL,
-  `user_designation` varchar(25) NOT NULL,
-  `main_logo` varchar(50) NOT NULL
+  `user_name` varchar(28) NOT NULL,
+  `user_email` varchar(50) NOT NULL,
+  `password` varchar(35) NOT NULL,
+  `logo_name` varchar(15) NOT NULL,
+  `user_designation` varchar(20) NOT NULL,
+  `user_cv` varchar(50) NOT NULL,
+  `user_image` varchar(50) NOT NULL,
+  `user_description` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_email`, `password`, `logo_name`, `user_designation`, `user_cv`, `user_image`, `user_description`) VALUES
+(7, 'Ahmad Ali', 'ahmad@gmail.com', '11', 'ahmad', 'Laravel Dev', 'user_cv_1695614897_613715.pdf', 'user_img_1695614897_166175.png', 'working on laravel last 5 month');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_about`
+-- Indexes for table `tbl_user`
 --
-ALTER TABLE `tbl_about`
-  ADD PRIMARY KEY (`about_id`);
-
---
--- Indexes for table `tbl_hero`
---
-ALTER TABLE `tbl_hero`
+ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -67,16 +61,10 @@ ALTER TABLE `tbl_hero`
 --
 
 --
--- AUTO_INCREMENT for table `tbl_about`
+-- AUTO_INCREMENT for table `tbl_user`
 --
-ALTER TABLE `tbl_about`
-  MODIFY `about_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tbl_hero`
---
-ALTER TABLE `tbl_hero`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
