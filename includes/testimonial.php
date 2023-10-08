@@ -30,8 +30,9 @@ if (!$con) {
             <?php
             foreach ($all_tml as $key => $tmls) {
             ?>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
+                <div class="col-md-6 ">
+
+                    <div class="testimonial-card">                      
                         <div class="testimonial-card-img-holder">
                             <?php if($tmls['tml_img']!=""){?>
                                 <img src="./assets/admin/upload_testimonial/<?=$tmls['tml_img']; ?>" class="testimonial-card-img" alt="Image">
@@ -43,6 +44,8 @@ if (!$con) {
                             <div class="testimonial-card-body">
                                 <p class="testimonial-card-subtitle"><?php echo $tmls['tml_text']; ?></p>
                                 <h6 class="testimonial-card-title"><?php echo $tmls['tml_name']; ?></h6>
+                                <a href="<?=$tmls['tml_ref_link']; ?>"><i class="ti-link">Referenece</i></a> 
+                                <a href=""></a>
                             </div>
                         </div>
                     </div>

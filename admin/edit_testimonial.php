@@ -1,6 +1,8 @@
 <!-- load function page and config page  -->
 <?php
+ ob_start();
 require_once('../functions/admin/adminFunction.php');
+
 
 // header area start
 get_admin_header();
@@ -32,8 +34,9 @@ if (!empty($_POST)) {
     //     $testName='tml_'.time().'_'.rand(1000,10000000).'.'.pathinfo($tml_img['name'],PATHINFO_EXTENSION);
     // }
 
-    $update_query = "UPDATE `testimonial` SET tml_name='$tml_name', tml_text='$tml_text',tml_designation='$tml_designation',tml_ref_link='$tml_ref_link' WHERE tml_id='$id'";
-                
+    $update_query = "UPDATE `testimonial` SET tml_name='$tml_name', tml_text='$tml_text',tml_designation='$tml_designation',
+                        tml_ref_link='$tml_ref_link' WHERE tml_id='$id'";
+
 
 
 
@@ -42,13 +45,26 @@ if (!empty($_POST)) {
             if (!empty($tml_designation)) {
                 // testimonial insert here 
                 if (mysqli_query($con, $update_query)) {
-                    // move_uploaded_file($tml_img['tmp_name'],'../assets/admin/upload_testimonial/'.$testName);
-                    // echo "Testimonial updated Successfully";
                 
+                    
+                    if($tml_img['name']!=""){
+                        $testName='tml_'.time().'_'.rand(1000,10000000).'.'.pathinfo($tml_img['name'],PATHINFO_EXTENSION);
+                        $upload = "UPDATE `testimonial` SET tml_img='$testName' WHERE tml_id='$id'";
+                        if(mysqli_query($con, $upload)){
+                            move_uploaded_file($tml_img['tmp_name'],'../assets/admin/upload_testimonial/'.$testName);
+                            
+                        }
+                        else{
+                            echo "Image not updated only  ";
+                        }
+                    }
+                    header('Location: edit_testimonial.php?q='.$id);
+                    // echo "Testimonial updated Successfully";
+
                 } else {
                     echo "Opps!! Testimonial add Faild";
                 }
-            }else{
+            } else {
                 echo "Testimonial Designation Required";
             }
         } else {
@@ -106,13 +122,13 @@ if (!empty($_POST)) {
                                     <div class="col col-md-3">
                                         <label for="email-input" class=" form-control-label">Designation</label>
                                     </div>
-                                    <div class="col-12 col-md-9">
-                                        <input type="text" id="designation-input" name="tml_designation" placeholder="Enter Designation" class="form-control" >
+                                    <div class="col-12 col-md-9">                                                                                                               
+                                        <input type="text" id="designation-input" name="tml_designation" placeholder="Enter Designation" class="form-control" value="<?= $data['tml_designation'] ?>">
 
                                     </div>
-                                    
+
                                 </div>
-                     
+
 
 
                                 <div class="row form-group">
@@ -123,14 +139,14 @@ if (!empty($_POST)) {
                                         <input type="file" id="file-input" name="tml_img" class="form-control" value="<?= $data['tml_img'] ?>">
                                     </div>
                                     <div class="col-md-5 offset-5 m-2">
-                                    <?php
-                                                if($data['tml_img']!=""){
-                                                ?>
-                                                    <img height="40"  src="../assets/admin/upload_testimonial/<?=$data['tml_img']; ?> " alt="pic">
-                                                <?php }else{ ?>
-                                                    <img height="40"  src="../assets/admin/upload_testimonial/avatar.jpg" alt="pic">
+                                        <?php
+                                        if ($data['tml_img'] != "") {
+                                        ?>
+                                            <img style="height: 200px; width:auto;" src="../assets/admin/upload_testimonial/<?= $data['tml_img']; ?> " alt="pic">
+                                        <?php } else { ?>
+                                            <img style="height: 200px; width:auto;" height="40" src="../assets/admin/upload_testimonial/avatar.jpg" alt="pic">
 
-                                                <?php } ?>
+                                        <?php } ?>
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">

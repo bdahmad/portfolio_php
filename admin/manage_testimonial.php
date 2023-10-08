@@ -71,9 +71,9 @@ get_admin_sidebar();
                                                 <?php
                                                 if($tmls['tml_img']!=""){
                                                 ?>
-                                                    <img height="40" class="img200" src="../assets/admin/upload_testimonial/<?=$tmls['tml_img']; ?> " alt="pic">
+                                                    <img style="height: 100px; width: auto; " class="img200" src="../assets/admin/upload_testimonial/<?=$tmls['tml_img']; ?> " alt="pic">
                                                 <?php }else{ ?>
-                                                    <img height="40" class="img200" src="../assets/admin/upload_testimonial/avatar.jpg" alt="pic">
+                                                    <img style="height: 100px; width: auto; " class="img200" src="../assets/admin/upload_testimonial/avatar.jpg" alt="pic">
 
                                                 <?php } ?>
                                             </td>                       
