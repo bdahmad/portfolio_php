@@ -53,6 +53,7 @@
                               $select = "SELECT  `user_email`, `password`FROM `tbl_user`";
                               $query = mysqli_query($con,$select);
                               $data = mysqli_fetch_assoc($query);
+                              .00.
 
                               $u_email = $data['user_email'];
                               $u_pass = $data['password'];

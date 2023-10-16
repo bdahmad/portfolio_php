@@ -33,12 +33,16 @@
     <!-- Main CSS-->
     <link href="../assets/admin/css/theme.css" rel="stylesheet" media="all">
 
-    {{-- font awosam icon cdn  --}}
+   <!-- font awosam icon cdn   -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- sweet alert cdn  -->
     <!-- <script src="jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
+
+    <!-- tinymic cdn   -->
+    <script src="https://cdn.tiny.cloud/1/ll7m9cquw1z0pqdf57ddif9draru9iqqi6kzqhjnvrvkn7vk/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 
 
 </head>

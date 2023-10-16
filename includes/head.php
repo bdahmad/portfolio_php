@@ -11,14 +11,25 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+
+    <!-- slick slider cdn  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
+<?php
+
+    require_once('config.php');
+    $select = "SELECT * FROM tbl_user";
+    $query = mysqli_query($con, $select);
+    $data = mysqli_fetch_assoc($query);
+?>
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="index.php">Meyawo</a>
+            <a class="logo" href="index.php"><?= $data['logo_name'];?></a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>

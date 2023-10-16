@@ -19,19 +19,7 @@
                                     <a href="add_header.php">Add</a>
                                 </li>
                                 <li>
-                                    <a href="#">View</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-cog"></i>About <i class="fas fa-angle-down"></i></a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="#">Add</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
+                                    <a href="view_header.php">View</a>
                                 </li>
                             </ul>
                         </li>
@@ -41,6 +29,39 @@
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="manage_skills.php">Manage Skills</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Pricing<i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="manage_price.php">Manage Packeg</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Portfolio <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="manage_all_portfolio.php">Manage All Portfolio</a>
+                                    <a href="manage_add_portfolio.php">Manage Add Portfolio</a>
+                                    <a href="manage_view_portfolio.php">Manage View Portfolio</a>
+                                    <a href="manage_edit_portfolio.php">Manage Edit Portfolio</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Messages <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="all_messages.php">All Messages</a>
                                 </li>
                                
                             </ul>

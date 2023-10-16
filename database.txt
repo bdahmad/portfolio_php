@@ -6,22 +6,39 @@ ahmad ali{
    tbl_user(user_id, user_name, user_email, password, logo_name, user_designation,user_cv, user_image, user_description)
 }
 sabbir{
-
+tbl_price(id, package-title, service-type, price, package-item,package-icon)
+tbl_skill(id, skill's name, skills-percentage, )
 }
 nurtaj{
+   
+tbl_footer(id, copyright,)
+tbl_social(id, social-logo, social-link)
 
+tbl_testimonial(id, name, description,img,designation,ref)
+
+
+   tbl_skill(id, skill's name, skills-percentage, ) - done
+   tbl_price(id, package-title, service-type, price, package-item,package-icon) -done
 }
+nurtaj{
+   tbl_social(id, social-logo, social-link)
+
+
+t  bl_testimonial(id, name, description,img,designation,ref)
+}
+
 mim{
-
+tbl_portfolio(id, name, live-review,git-link,work-description,portfolio_image)
+tbl_contact(id, name, email, message)
 }
+
 ** nijer moto table nia kaj koren jar jeta valo lage
 
 
+
 tbl_portfolio(id, name, live-review,git-link,work-description,)
+
 tbl_contact(id, name, email, message)
 tbl_footer(id, copyright,)
-tbl_social(id, social-logo, social-link)
-tbl_skill(id, skill's name, skills-percentage, )
-tbl_testimonial(id, name, description,img,designation,ref)
 
-tbl_price(id, package-title, service-type, price, package-item,package-icon)
+
