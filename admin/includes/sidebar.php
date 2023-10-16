@@ -66,6 +66,15 @@
                                
                             </ul>
                         </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-cog"></i>Testimonial <i class="fas fa-angle-down"></i></a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="manage_testimonial.php">Manage Testimonial</a>
+                                </li>                               
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
